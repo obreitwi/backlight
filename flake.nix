@@ -17,6 +17,6 @@
       inherit system;
     };
   in {
-      packages.${system}.default = pkgs.callPackage (./.) {};
+      packages.${system}.default = pkgs.callPackage ./default.nix {};
     };
 }
