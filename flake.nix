@@ -17,6 +17,6 @@
       inherit system;
     };
   in {
-      packages.${system}.default = pkgs.callPackage (import ./.) {};
+      packages.${system}.default = pkgs.callPackage (./.) {};
     };
 }
