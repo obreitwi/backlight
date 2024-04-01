@@ -11,8 +11,6 @@
     ...
   }: let
     system = "x86_64-linux";
-    cflags = "-std=c99 -pedantic -Wall -Wextra -Os";
-    lflags = "-lm";
     pkgs = import nixpkgs {
       inherit system;
     };
