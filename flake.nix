@@ -16,5 +16,7 @@
     };
   in {
       packages.${system}.default = pkgs.callPackage ./default.nix {};
+
+      overlays.${system} = prev: final: { backlight = self.packages.${system}.default; };
     };
 }
