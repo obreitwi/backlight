@@ -4,7 +4,7 @@
 in
   pkgs.stdenv.mkDerivation {
     name = "backlight";
-    src = ./backlight.c;
+    src = ./.;
 
     buildPhase = ''
       $CC -o backlight ${cflags} ${lflags} $src/backlight.c
